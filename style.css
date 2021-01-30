@@ -25,6 +25,21 @@ body {
     background-color: white;
 }
 
+.player{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.audio-title{
+    padding-left: 0.5rem;
+}
+
+.audio{
+    width: 100%;
+}
+
 .album{
     min-height: 35vh;
     display: flex;
@@ -65,26 +80,18 @@ body {
     display: flex;
     justify-content: space-between;
     transition: all 0.75s ease-out;
-}
-
-.versions button{
-    padding: 0.5rem 2rem;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
     background: none;
     border: none;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
-    border-radius: 30px;
     font-weight: bold;
-    color: #505050;
+    color: #c43b55;
 }
 
-button.active{
-    background: #505050;
-    color: white;
-}
 
 .purchase {
-    margin-top: 5rem;
+    margin-top: 2rem;
     transition: all 0.75s ease-out;
+    margin-bottom: 1rem;
 }
 
 .purchase button {

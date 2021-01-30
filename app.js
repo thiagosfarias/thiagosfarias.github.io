@@ -5,7 +5,7 @@ const title = document.querySelector(".title");
 const album = document.querySelector(".album img");
 const purchase = document.querySelector(".purchase");
 const description = document.querySelector(".info h3");
-const versions = document.querySelector(".versions");
+const player = document.querySelector(".player");
 
 container.addEventListener("mousemove", e =>{
     console.log(e.pageX, e.pageY)
@@ -22,8 +22,8 @@ container.addEventListener("mouseenter", e => {
     title.style.transform = "translateZ(120px)";
     album.style.transform = "translateZ(170px)";
     description.style.transform = "translateZ(105px)";
-    versions.style.transform = "translateZ(80px)";
     purchase.style.transform = "translateZ(55px)";
+    player.style.transform = "translateZ(80px)";
 })
 
 
@@ -35,6 +35,7 @@ container.addEventListener("mouseleave", e => {
     title.style.transform = "translateZ(0px)";
     album.style.transform = "translateZ(0px) rotateZ(0deg)";
     description.style.transform = "translateZ(0px)";
-    versions.style.transform = "translateZ(0px)";
     purchase.style.transform = "translateZ(0px)";
+    player.style.transform = "translateZ(0px)";
 })
+
