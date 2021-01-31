@@ -18,7 +18,7 @@
     font-weight: 500;
     opacity: 0.8;
     font-size: 1rem;
-
+    margin-right: 1rem;
   }
   
   h3 {
@@ -53,15 +53,9 @@
     border-radius: 2rem;
     z-index: 2;
     display: flex;
+    backdrop-filter: blur(10px);
   }
 
-  @media(min-widht: 1050px){
-
-  }
-
-  @media(min-height: 1050px){
-
-  }
 
 
 
@@ -73,8 +67,8 @@
     background: white;
     background: linear-gradient(
         to right bottom,
-        rgba(255, 255, 255, 0.8),
-        rgba(255, 255, 255, 0.3)
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.2)
     );
     height: 15rem;
     width: 15rem;
@@ -120,11 +114,21 @@
 
 
 .user img{
-  margin-top: 1rem;
+    margin-top: 1rem;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
+    transition: 0.5s;
+    z-index: 4;
 }
+
+.user img:hover{
+  width: 8rem;
+  height: 8rem;
+  visibility: visible;
+  opacity: 1;
+}
+
 
 .links{
     margin-top: 0;
@@ -142,8 +146,14 @@
 }
 
 .link img{
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.user {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .link h2 {
@@ -159,7 +169,7 @@
     text-align: center;
     background: linear-gradient(
       to right bottom,
-      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3),
       rgba(255, 255, 255, 0.3)
     );
     border-radius: 2rem;
@@ -195,10 +205,6 @@
     cursor: pointer;
 }
 
-.user img:hover{
-  backdrop-filter: blur;
-}
-
 
 .card img{
     width: 5rem;
@@ -217,18 +223,76 @@
     transform: scale(1.1);
 }
 
-@media(max-width: 1290px) {
-  .link h2, .info, .card h2{
+@media(max-width: 1300px) {
+  .link h2, .card h2, .info h2{
     display: none;
+    margin-right: 2.5rem;
   }
   .user img{
     transition: ease-out;
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  .cards {
+    margin-right: 5rem;
   }
 }
 
 .info {
-  margin-top: 1rem;
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    top: 75%;
+    left: 54%;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+    transform: translate(-50%, -50%);
+    background: linear-gradient(
+      to right bottom,
+      rgba(115, 212, 241, 0.7),
+      rgba(12, 89, 92, 0.3)
+    );
+    border-radius: 50%;
+    margin-top: -2rem;
+    backdrop-filter: blur(10px);
+    opacity: 0.8;
+}
+
+
+
+.info h2 {
+  padding-top: 1.9rem;
+  font-weight: bold;
+  padding-left: 0.9rem;
+  align-items: center;
+  z-index: 6;
+}
+
+.foot h2{
+  color: #426696;
+  font-weight: 600;
+  font-size: 1rem;
+  opacity: 0.8;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.foot {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+footer{
+  background-color: #6f94c4;
+  margin: 0;
 }
 
