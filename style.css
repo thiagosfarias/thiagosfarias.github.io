@@ -4,11 +4,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+
   
   h1 {
     color: #426696;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2rem;
     opacity: 0.8;
   }
   h2,
@@ -16,11 +17,14 @@
     color: #658ec6;
     font-weight: 500;
     opacity: 0.8;
+    font-size: 1rem;
+
   }
   
   h3 {
     color: #426696;
     font-weight: 600;
+    font-size: 1rem;
     opacity: 0.8;
   }
   
@@ -30,6 +34,7 @@
   main {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
+    min-width: 100vh;
     background: linear-gradient(to right top, #65dfc9, #6cdbeb);
     display: flex;
     align-items: center;
@@ -39,7 +44,7 @@
   .glass {
     background: white;
     min-height: 80vh;
-    width: 60%;
+    width: 62%;
     background: linear-gradient(
       to right bottom,
       rgba(255, 255, 255, 0.7),
@@ -49,6 +54,16 @@
     z-index: 2;
     display: flex;
   }
+
+  @media(min-widht: 1050px){
+
+  }
+
+  @media(min-height: 1050px){
+
+  }
+
+
 
 .circle1, 
 .circle2,
@@ -61,12 +76,10 @@
         rgba(255, 255, 255, 0.8),
         rgba(255, 255, 255, 0.3)
     );
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
     position: absolute;
     border-radius: 50%;
-    transform: scale(0.5);
-    animation: pulse 2s infinite;
 }
 
 .circle1{
@@ -107,8 +120,9 @@
 
 
 .user img{
-    width: 15rem;
-    height: 15rem;
+  margin-top: 1rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
 }
 
@@ -121,8 +135,8 @@
 
 .link{
     display: flex;
-    margin: 2rem 0rem;
-    padding: 1rem 5rem;
+    margin: 1rem 0rem;
+    padding: 0.5rem 0.25rem;
     align-items: center;
     transition: all .2s ease-in-out;
 }
@@ -155,8 +169,8 @@
 .experiences{
     width: 68%;
     margin-left: 1.2rem;
-    margin-top: 5rem;
-    margin-right: 3rem;
+    margin-top: 3.5rem;
+    margin-right: 2rem;
 }
 
 
@@ -168,8 +182,8 @@
     rgba(255, 255, 255, 0.5)
   );
   border-radius: 1rem;
-  margin: 2rem 0rem;
-  padding: 1rem;
+  margin: 1rem 0rem;
+  padding: 0.5rem;
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
   justify-content: space-between;
   align-items: center;
@@ -179,6 +193,10 @@
 .card:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.user img:hover{
+  backdrop-filter: blur;
 }
 
 
@@ -192,6 +210,7 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
+    margin: 0.8rem;
 }
 
 .link:hover{
