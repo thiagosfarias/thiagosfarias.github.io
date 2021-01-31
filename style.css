@@ -217,9 +217,14 @@
     transform: scale(1.1);
 }
 
-@media(max-width: 1120px) {
-  .link h2{
+@media(max-width: 1290px) {
+  .link h2, .info, .card h2{
     display: none;
+  }
+  .user img{
+    transition: ease-out;
+    width: 4rem;
+    height: 4rem;
   }
 }
 
