@@ -3,38 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Card</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+    <title>Thiago Farias</title>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
 
-            <div class="album">
-                <div class="circle"></div>
-                <img src="assets/Lady_Gaga_-_Chromatica_Logo.png" alt="ladygaga">
-            </div>
-
-            <div class="info">
-                <h1 class="title">Chromatica</h1>
-                <h3 class="description">Último álbum pop da cantora Lady Gaga, melhor de 2020</h3>
-            </div>
-
-            <div class="player">
-               <audio controls>
-                   <source src="assets/Lady Gaga - Free Woman.mp3">
-               </audio>
-               <h3 class="audio-title">Free Woman - Lady Gaga</h3>
-            </div>
-
-            <div class="purchase">
-                <button>Comprar</button>
-            </div>
-
-        </div>
-    </div>
-
-    <script src="app.js"></script>
+        <main>
+            <section class="glass">
+                <div class="dashboard">
+                    <div class="user">
+                        <img src="assets/profile-pic.jpg" alt="">
+                        <div class="info">
+                            <h2>Thiago Farias, São Luís - MA</h2>
+                            <h2>1994</h2>
+                            <h2>Fullstack developer</h4>
+                        </div>
+                    </div>
+                    <div class="links">
+                        <div class="link">
+                            <a href="https://www.linkedin.com/in/thiago-farias-b09280163/"><img src="assets/linkedin.svg" alt="linkedin"></a>
+                            <h2>Linkedin</h2>
+                        </div>
+                        <div class="link">
+                            <a href="https://github.com/thiagosfarias/"><img src="assets/github.svg" alt="github"></a>
+                            <h2>Github</h2>
+                        </div>
+                        <div class="link">
+                            <a href="https://www.instagram.com/thiago.sfarias/"><img src="assets/insta.svg" alt="instagram"></a>
+                            <h2>Instagram</h2>
+                        </div>
+                        <div class="link">
+                            <a href="https://twitter.com/thigsfarias"><img src="assets/twitter.svg" alt="twitter"></a>
+                            <h2>Twitter</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="experiences">
+                    <div class="cards">
+                        <h1>Experiências</h1>
+                        <div class="card" onclick="agrotools()">
+                            <img src="assets/1560176684460.png" alt="agrotools">
+                            <h2>Agrotools</h2>
+                            <h2 class="cargo">Programador Junior</h2>
+                        </div>
+                        <h1>Quem Sou?</h1>
+                        <div class="card">
+                            <h2 class="about-me">Tenho 26 anos, nascido na cidade de São Luís, sou programador fullstack.
+                                Sou apaixonado por programação, design, jogos, música e artes em geral. Meu dream job é trabalhar na nubank e morar fora do país.  
+                            </h2>
+                        </div>
+                        <h1>Formação</h1>
+                        <div class="card" onclick="ifma()">
+                            <img src="assets/ifma_novo.jpg" alt="ifma">
+                            <h2>Instituto Federal do Maranhão</h2>
+                            <h2 class="cargo">Sistemas de informação</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="circle4"></div>
+            <div class="circle5"></div>
+        </main>
+        <script src="app.js"></script>
 </body>
 </html>
